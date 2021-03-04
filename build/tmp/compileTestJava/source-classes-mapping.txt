@@ -1,18 +1,22 @@
+runner/ItemCRUD.java
+ runner.ItemCRUD
+runner/CreateItemStep.java
+ runner.CreateItemStep
 basicRestAssured/CRUDProjectTest.java
  basicRestAssured.CRUDProjectTest
-basicRestAssured/CRUDProjectTokenTest.java
- basicRestAssured.CRUDProjectTokenTest
+runner/MyStepdefs.java
+ runner.MyStepdefs
 utilsJson/JsonHelper.java
  utilsJson.JsonHelper
 runner/Runner.java
  runner.Runner
+helpers/GenereteLocalReport.java
+ helpers.GenereteLocalReport
 basicRestAssured/BasicTest.java
  basicRestAssured.BasicTest
 basicRestAssured/CRUDItemTest.java
  basicRestAssured.CRUDItemTest
 unitTest/JsonCompareTest.java
  unitTest.JsonCompareTest
-runner/CreateItemStep.java
- runner.CreateItemStep
-runner/MyStepdefs.java
- runner.MyStepdefs
+basicRestAssured/CRUDProjectTokenTest.java
+ basicRestAssured.CRUDProjectTokenTest
