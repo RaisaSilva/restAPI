@@ -31,6 +31,7 @@ public class MyStepdefs {
                 all().
                 when().
                 post(url);
+        response.then().log().all();
     }
 
     @Then("yo espero que el codigo de respuesta sea {int}")

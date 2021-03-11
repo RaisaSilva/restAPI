@@ -6,7 +6,7 @@ Feature: Project
   So that i am able to manipulate the item
 
     Given yo tengo acceso a Todo.ly
-    When yo envio una peticion POST al siguiente url https://todo.ly/api/items.json con json
+    When yo envio una peticion POST al siguiente url http://todo.ly/api/items.json con json
     """
     {
     "Content": "New Item"

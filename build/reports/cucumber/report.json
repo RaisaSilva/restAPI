@@ -1,0 +1,824 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-04T16:09:27.372Z",
+        "line": 5,
+        "name": "As admin user",
+        "description": "  I want to create, update and delete a project\n  So that i am able to manipulate the project",
+        "id": "project;as-admin-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "yo tengo acceso al Todo.ly",
+            "match": {
+              "location": "runner.MyStepdefs.yoTengoAccesoAlTodoLy()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1615000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "yo envio una peticion POST al url http://todo.ly/api/projects.json con json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://todo.ly/api/projects.json",
+                  "offset": 34
+                }
+              ],
+              "location": "runner.MyStepdefs.yoEnvioUnaPeticionPOSTAlUrlHttpTodoLyApiProjectsJsonConJson(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "line": 11,
+              "value": "{\n  \"Content\":\"EXTERNAL FILE\",\n  \"Icon\":\"4\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 26000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "yo espero que el codigo de respuesta sea 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "runner.MyStepdefs.yoEsperoQueElCodigoDeRespuestaSea(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 483000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "yo espero que el nombre del project sea \"EXTERNAL FILE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EXTERNAL FILE\"",
+                  "offset": 40
+                }
+              ],
+              "location": "runner.MyStepdefs.yoEsperoQueElNombreDelProject(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Projectos"
+          }
+        ]
+      }
+    ],
+    "name": "Project",
+    "description": "",
+    "id": "project",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/basicCucumber/myFirstTest.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-04T16:09:29.558Z",
+        "line": 23,
+        "name": "As admin user",
+        "description": "  I want to create, update and delete a project\n  So that i am able to manipulate the project",
+        "id": "project;as-admin-user;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "yo tengo acceso al Todo.ly",
+            "match": {
+              "location": "runner.MyStepdefs.yoTengoAccesoAlTodoLy()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 417000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "yo envio una peticion POST al url http://todo.ly/api/projects.json con json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://todo.ly/api/projects.json",
+                  "offset": 34
+                }
+              ],
+              "location": "runner.MyStepdefs.yoEnvioUnaPeticionPOSTAlUrlHttpTodoLyApiProjectsJsonConJson(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "line": 12,
+              "value": "{\n  \"Content\":\"EynarCucumber1\",\n  \"Icon\":\"1\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "yo espero que el codigo de respuesta sea 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "runner.MyStepdefs.yoEsperoQueElCodigoDeRespuestaSea(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "yo espero que el nombre del project sea \"EynarCucumber1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EynarCucumber1\"",
+                  "offset": 40
+                }
+              ],
+              "location": "runner.MyStepdefs.yoEsperoQueElNombreDelProject(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Projectos"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-04T16:09:30.002Z",
+        "line": 24,
+        "name": "As admin user",
+        "description": "  I want to create, update and delete a project\n  So that i am able to manipulate the project",
+        "id": "project;as-admin-user;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "yo tengo acceso al Todo.ly",
+            "match": {
+              "location": "runner.MyStepdefs.yoTengoAccesoAlTodoLy()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 386000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "yo envio una peticion POST al url http://todo.ly/api/projects.json con json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://todo.ly/api/projects.json",
+                  "offset": 34
+                }
+              ],
+              "location": "runner.MyStepdefs.yoEnvioUnaPeticionPOSTAlUrlHttpTodoLyApiProjectsJsonConJson(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "line": 12,
+              "value": "{\n  \"Content\":\"EynarCucumber2\",\n  \"Icon\":\"2\"\n}"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "yo espero que el codigo de respuesta sea 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "runner.MyStepdefs.yoEsperoQueElCodigoDeRespuestaSea(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "yo espero que el nombre del project sea \"EynarCucumber2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EynarCucumber2\"",
+                  "offset": 40
+                }
+              ],
+              "location": "runner.MyStepdefs.yoEsperoQueElNombreDelProject(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Projectos"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-04T16:09:30.410Z",
+        "line": 25,
+        "name": "As admin user",
+        "description": "  I want to create, update and delete a project\n  So that i am able to manipulate the project",
+        "id": "project;as-admin-user;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "yo tengo acceso al Todo.ly",
+            "match": {
+              "location": "runner.MyStepdefs.yoTengoAccesoAlTodoLy()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 413000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "yo envio una peticion POST al url http://todo.ly/api/projects.json con json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://todo.ly/api/projects.json",
+                  "offset": 34
+                }
+              ],
+              "location": "runner.MyStepdefs.yoEnvioUnaPeticionPOSTAlUrlHttpTodoLyApiProjectsJsonConJson(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "line": 12,
+              "value": "{\n  \"Content\":\"EynarCucumber3\",\n  \"Icon\":\"3\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "yo espero que el codigo de respuesta sea 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "runner.MyStepdefs.yoEsperoQueElCodigoDeRespuestaSea(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "yo espero que el nombre del project sea \"EynarCucumber3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EynarCucumber3\"",
+                  "offset": 40
+                }
+              ],
+              "location": "runner.MyStepdefs.yoEsperoQueElNombreDelProject(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Projectos"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-04T16:09:30.846Z",
+        "line": 26,
+        "name": "As admin user",
+        "description": "  I want to create, update and delete a project\n  So that i am able to manipulate the project",
+        "id": "project;as-admin-user;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "yo tengo acceso al Todo.ly",
+            "match": {
+              "location": "runner.MyStepdefs.yoTengoAccesoAlTodoLy()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 378000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "yo envio una peticion POST al url http://todo.ly/api/projects.json con json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://todo.ly/api/projects.json",
+                  "offset": 34
+                }
+              ],
+              "location": "runner.MyStepdefs.yoEnvioUnaPeticionPOSTAlUrlHttpTodoLyApiProjectsJsonConJson(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "line": 12,
+              "value": "{\n  \"Content\":\"EynarCucumber4\",\n  \"Icon\":\"4\"\n}"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "yo espero que el codigo de respuesta sea 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "runner.MyStepdefs.yoEsperoQueElCodigoDeRespuestaSea(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "yo espero que el nombre del project sea \"EynarCucumber4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EynarCucumber4\"",
+                  "offset": 40
+                }
+              ],
+              "location": "runner.MyStepdefs.yoEsperoQueElNombreDelProject(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Projectos"
+          }
+        ]
+      }
+    ],
+    "name": "Project",
+    "description": "",
+    "id": "project",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/basicCucumber/mySecondTest.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-04T16:09:31.244Z",
+        "line": 4,
+        "name": "As admin user",
+        "description": "  I want to create, update and delete an item\n  So that i am able to manipulate the item",
+        "id": "project;as-admin-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "yo tengo acceso a Todo.ly",
+            "match": {
+              "location": "runner.CreateItemStep.yoTengoAccesoATodoLy()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 436000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "yo envio una peticion POST al siguiente url http://todo.ly/api/items.json con json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://todo.ly/api/items.json",
+                  "offset": 44
+                }
+              ],
+              "location": "runner.CreateItemStep.yoEnvioUnaPeticionPOSTAlSiguienteUrlHttpsTodoLyApiItemsJsonConJson(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "line": 10,
+              "value": "{\n\"Content\": \"New Item\"\n}"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "yo espero que el codigo de respuesta sea: 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "runner.CreateItemStep.yoEsperoQueElCodigoDeRespuestaSea(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "yo espero que el nombre del project sea: \"New Item\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New Item\"",
+                  "offset": 41
+                }
+              ],
+              "location": "runner.CreateItemStep.yoEsperoQueElNombreDelProjectSea(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Projectos"
+          }
+        ]
+      }
+    ],
+    "name": "Project",
+    "description": "",
+    "id": "project",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/ejercicioItem/createItem.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-04T16:09:31.704Z",
+        "line": 4,
+        "name": "As admin user",
+        "description": "  I want to create, update and delete an item\n  So that i am able to manipulate the item",
+        "id": "item;as-admin-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "tengo acceso a Todo.ly",
+            "match": {
+              "location": "runner.ItemCRUD.tengoAccesoATodoLy()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 434000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "envio una peticion POST al url http://todo.ly/api/items.json con json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://todo.ly/api/items.json",
+                  "offset": 31
+                }
+              ],
+              "location": "runner.ItemCRUD.envioUnaPeticionPOSTAlUrlConJson(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "line": 10,
+              "value": "{\n    \"Content\": \"Item Nuevo\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "quiero que el codigo de respuesta sea 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "runner.ItemCRUD.quieroQueElCodigoDeRespuestaSea(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "yo espero el response body sea",
+            "match": {
+              "location": "runner.ItemCRUD.yoEsperoElResponseBodySea(java.lang.String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 18,
+              "value": "{\n  \"Id\": \"IGNORE\",\n  \"Content\": \"Item Nuevo\",\n  \"ItemType\": 1,\n  \"Checked\": false,\n  \"ProjectId\": null,\n  \"ParentId\": null,\n  \"Path\": \"\",\n  \"Collapsed\": false,\n  \"DateString\": null,\n  \"DateStringPriority\": 0,\n  \"DueDate\": \"\",\n  \"Recurrence\": null,\n  \"ItemOrder\": null,\n  \"Priority\": 4,\n  \"LastSyncedDateTime\": \"IGNORE\",\n  \"Children\": [\n  ],\n  \"DueDateTime\": null,\n  \"CreatedDate\": \"IGNORE\",\n  \"LastCheckedDate\": null,\n  \"LastUpdatedDate\": \"IGNORE\",\n  \"Deleted\": false,\n  \"Notes\": \"\",\n  \"InHistory\": false,\n  \"SyncClientCreationId\": null,\n  \"DueTimeSpecified\": true,\n  \"OwnerId\": \"IGNORE\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 30000000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "yo obtengo el Id y lo guardo en Id_Item",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Id",
+                  "offset": 14
+                },
+                {
+                  "val": "Id_Item",
+                  "offset": 32
+                }
+              ],
+              "location": "runner.ItemCRUD.yoObtengoElIdYLoGuardoEnId_Item(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 392000000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "yo envio una peticion PUT al url http://todo.ly/api/items/Id_Item.json con json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://todo.ly/api/items/Id_Item.json",
+                  "offset": 33
+                }
+              ],
+              "location": "runner.ItemCRUD.yoEnvioUnaPeticionPUTAlUrlHttpTodoLyApiItemsId_ItemJsonConJson(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "line": 51,
+              "value": "{\n    \"Content\": \"Item Nuevo\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "quiero que el codigo de respuesta sea 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "runner.ItemCRUD.quieroQueElCodigoDeRespuestaSea(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "yo espero el response body sea",
+            "match": {
+              "location": "runner.ItemCRUD.yoEsperoElResponseBodySea(java.lang.String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 58,
+              "value": "{\n  \"Id\": Id_Item,\n  \"Content\": \"Item Nuevo\",\n  \"ItemType\": 1,\n  \"Checked\": false,\n  \"ProjectId\": null,\n  \"ParentId\": null,\n  \"Path\": \"\",\n  \"Collapsed\": false,\n  \"DateString\": null,\n  \"DateStringPriority\": 0,\n  \"DueDate\": \"\",\n  \"Recurrence\": null,\n  \"ItemOrder\": null,\n  \"Priority\": 4,\n  \"LastSyncedDateTime\": \"IGNORE\",\n  \"Children\": [],\n  \"DueDateTime\": null,\n  \"CreatedDate\": \"IGNORE\",\n  \"LastCheckedDate\": null,\n  \"LastUpdatedDate\": \"IGNORE\",\n  \"Deleted\": false,\n  \"Notes\": \"\",\n  \"InHistory\": false,\n  \"SyncClientCreationId\": null,\n  \"DueTimeSpecified\": true,\n  \"OwnerId\": \"IGNORE\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 418000000,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "yo envio una peticion GET al url http://todo.ly/api/items/Id_Item.json con json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://todo.ly/api/items/Id_Item.json",
+                  "offset": 33
+                }
+              ],
+              "location": "runner.ItemCRUD.yoEnvioUnaPeticionGETAlUrlHttpTodoLyApiItemsId_ItemJsonConJson(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "line": 89,
+              "value": ""
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "quiero que el codigo de respuesta sea 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "runner.ItemCRUD.quieroQueElCodigoDeRespuestaSea(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "yo espero el response body sea",
+            "match": {
+              "location": "runner.ItemCRUD.yoEsperoElResponseBodySea(java.lang.String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 93,
+              "value": "{\n  \"Id\": Id_Item,\n  \"Content\": \"Item Nuevo\",\n  \"ItemType\": 1,\n  \"Checked\": false,\n  \"ProjectId\": null,\n  \"ParentId\": null,\n  \"Path\": \"\",\n  \"Collapsed\": false,\n  \"DateString\": null,\n  \"DateStringPriority\": 0,\n  \"DueDate\": \"\",\n  \"Recurrence\": null,\n  \"ItemOrder\": null,\n  \"Priority\": 4,\n  \"LastSyncedDateTime\": \"IGNORE\",\n  \"Children\": [],\n  \"DueDateTime\": null,\n  \"CreatedDate\": \"IGNORE\",\n  \"LastCheckedDate\": null,\n  \"LastUpdatedDate\": \"IGNORE\",\n  \"Deleted\": false,\n  \"Notes\": \"\",\n  \"InHistory\": false,\n  \"SyncClientCreationId\": null,\n  \"DueTimeSpecified\": true,\n  \"OwnerId\": \"IGNORE\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 370000000,
+              "status": "passed"
+            },
+            "line": 123,
+            "name": "yo envio una peticion DELETE al url http://todo.ly/api/items/Id_Item.json con json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://todo.ly/api/items/Id_Item.json",
+                  "offset": 36
+                }
+              ],
+              "location": "runner.ItemCRUD.yoEnvioUnaPeticionDELETEAlUrlHttpTodoLyApiItemsId_ItemJsonConJson(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "line": 124,
+              "value": ""
+            }
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 126,
+            "name": "quiero que el codigo de respuesta sea 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "runner.ItemCRUD.quieroQueElCodigoDeRespuestaSea(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 127,
+            "name": "yo espero el response body sea",
+            "match": {
+              "location": "runner.ItemCRUD.yoEsperoElResponseBodySea(java.lang.String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 128,
+              "value": "{\n  \"Id\": Id_Item,\n  \"Content\": \"Item Nuevo\",\n  \"ItemType\": 1,\n  \"Checked\": false,\n  \"ProjectId\": null,\n  \"ParentId\": null,\n  \"Path\": \"\",\n  \"Collapsed\": false,\n  \"DateString\": null,\n  \"DateStringPriority\": 0,\n  \"DueDate\": \"\",\n  \"Recurrence\": null,\n  \"ItemOrder\": null,\n  \"Priority\": 4,\n  \"LastSyncedDateTime\": \"IGNORE\",\n  \"Children\": [],\n  \"DueDateTime\": null,\n  \"CreatedDate\": \"IGNORE\",\n  \"LastCheckedDate\": null,\n  \"LastUpdatedDate\": \"IGNORE\",\n  \"Deleted\": false,\n  \"Notes\": \"\",\n  \"InHistory\": false,\n  \"SyncClientCreationId\": null,\n  \"DueTimeSpecified\": true,\n  \"OwnerId\": \"IGNORE\"\n}"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Item"
+          }
+        ]
+      }
+    ],
+    "name": "Item",
+    "description": "",
+    "id": "item",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/itemCRUD.feature",
+    "tags": []
+  }
+]

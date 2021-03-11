@@ -31,6 +31,7 @@ public class CreateItemStep {
                 all().
                 when().
                 post(url);
+        response.then().log().all();
     }
 
     @Then("yo espero que el codigo de respuesta sea: {int}")
@@ -43,7 +44,7 @@ public class CreateItemStep {
     @And("yo espero que el nombre del project sea: {string}")
     public void yoEsperoQueElNombreDelProjectSea(String expectedNameProject) {
         response.then().
-                body("content", equalTo(expectedNameProject));
+                body("Content", equalTo(expectedNameProject));
 
     }
 

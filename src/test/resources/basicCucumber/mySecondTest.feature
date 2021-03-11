@@ -19,7 +19,7 @@ Feature: Project
     And yo espero que el nombre del project sea "<nombreProject>"
 
     Examples:
-      | nombreProject  | isconProject.a  |
+      | nombreProject  | iconProject  |
       | EynarCucumber1 | 1            |
       | EynarCucumber2 | 2            |
       | EynarCucumber3 | 3            |
